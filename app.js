@@ -122,7 +122,7 @@ const checkRow = () => {
                 } else {
                     flipTile()
                     if (wordle == guess) {
-                        showMessage('Magnificent!')
+                        showMessage('Good job!')
                         isGameOver = true
                         return
                     } else {
@@ -183,5 +183,6 @@ const flipTile = () => {
             addColorToKey(guess[index].letter, guess[index].color)
         }, 500 * index)
     })
+
 }
 
